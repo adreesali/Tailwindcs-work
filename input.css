@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-image: url(./Apple.png );
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% -25%;
+
+}
+
+#cta {
+    background-image: url(../1Logo.png);
+    background-repeat: no-repeat;
+}
+
+@media(max-width:576px) {
+    body {
+        background-position: 50px -50px;
+        background-size: 500px;
+    }
+    #cta{
+        background-image: url(../1Logo.png);
+    }
+}
+
+/* hamburger Menu */
+
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hambyurger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+}
+
+.hamburger-middle {
+    transform: translate(7px);
+}
+
+.hamburger-bottom {
+    transform: translate(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translate(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg);
+} 
+
+.open .hamburger-top {
+    transform: rotate(45deg) translate(6px) translate(6px)
+    ;
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translate(6px) translate(6px)
+    ;
+}
